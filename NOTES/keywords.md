@@ -71,7 +71,7 @@ SELECT
 FROM
     job_postings_fact
 WHERE
-    job_tite_short ='Data Analyst' (salary_year_avg > 9000)
+    job_title_short ='Data Analyst' (salary_year_avg > 9000)
 
 ```
 
@@ -106,6 +106,23 @@ ORDER BY
 	salary_year_avg DESC
 ```
 
+## Alias: `AS`
+
+- `AS` is used to rename a column in a table; a temporary name (alias)
+- Make column names more readable
+
+### Examples
+
+```
+SELECT 
+	salary_year_avg,
+    job_title_short,
+    job_location AS location,
+    job_via 
+FROM 
+	job_postings_fact 
+```
+___Now the `job_location` column name will be shown as `location`___
 ## Order to write commands
 
 ```
